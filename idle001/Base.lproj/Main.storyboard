@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="idle001" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,95 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Retro-Coin-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="G1F-Y3-t3T">
+                                <rect key="frame" x="10" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="PbE-gs-b6m"/>
+                                    <constraint firstAttribute="height" constant="50" id="Zqy-6e-CRR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlc-fD-4Xk">
+                                <rect key="frame" x="70" y="35" width="12" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="yic-ng-ydL"/>
+                                    <constraint firstAttribute="width" constant="12" id="zfk-gT-B83"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFa-wR-zj3">
+                                <rect key="frame" x="39" y="137" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10342639593908631" green="0.006767374743025481" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Generate Random Car">
+                                    <color key="titleColor" red="0.95710476584480875" green="1" blue="0.98675108815966694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateRandomCarButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cmD-wh-B0i"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mr1-Vr-Brq">
+                                <rect key="frame" x="92" y="27" width="88" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="NCB-BX-Sjb"/>
+                                    <constraint firstAttribute="width" constant="88" id="h2r-7G-9cP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OV-hr-nrw">
+                                <rect key="frame" x="39" y="188" width="235" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1034263959" green="0.0067673747429999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Enter Race">
+                                    <color key="titleColor" red="0.95710476580000003" green="1" blue="0.98675108820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterRaceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l26-CD-Gyt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJd-Lq-5vL">
+                                <rect key="frame" x="39" y="243" width="235" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1034263959" green="0.0067673747429999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Generate 1 day of SB">
+                                    <color key="titleColor" red="0.95710476580000003" green="1" blue="0.98675108820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateOneDayOfSuperBucksButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nuL-3d-S9I"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mr1-Vr-Brq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="7" id="3qz-L8-bDD"/>
+                            <constraint firstItem="rlc-fD-4Xk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="Qho-RJ-iEV"/>
+                            <constraint firstItem="G1F-Y3-t3T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Uxi-jP-gE3"/>
+                            <constraint firstItem="mr1-Vr-Brq" firstAttribute="leading" secondItem="rlc-fD-4Xk" secondAttribute="trailing" constant="10" id="Yeu-h2-GTc"/>
+                            <constraint firstItem="rlc-fD-4Xk" firstAttribute="leading" secondItem="G1F-Y3-t3T" secondAttribute="trailing" constant="10" id="cWr-aN-PWl"/>
+                            <constraint firstItem="G1F-Y3-t3T" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="mSa-zk-xar"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="enterRaceButton" destination="7OV-hr-nrw" id="trY-Ad-9Is"/>
+                        <outlet property="generateOneDayOfSuperBucksButton" destination="bJd-Lq-5vL" id="acr-sZ-Wgx"/>
+                        <outlet property="generateRandomCarButton" destination="WFa-wR-zj3" id="Xch-mN-LJn"/>
+                        <outlet property="superBucksIconImageView" destination="G1F-Y3-t3T" id="FGM-5x-LcJ"/>
+                        <outlet property="superBucksLabel" destination="mr1-Vr-Brq" id="0v6-r5-yho"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Retro-Coin-icon.png" width="256" height="256"/>
+    </resources>
 </document>

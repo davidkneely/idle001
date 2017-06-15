@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7A974241EEDDCDE0049EB88 /* Retro-Coin-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A7A974231EEDDCDE0049EB88 /* Retro-Coin-icon.png */; };
 		A7FA68091EEA932C00698361 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FA68081EEA932C00698361 /* AppDelegate.swift */; };
 		A7FA680B1EEA932C00698361 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FA680A1EEA932C00698361 /* ViewController.swift */; };
 		A7FA680E1EEA932C00698361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7FA680C1EEA932C00698361 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7A974231EEDDCDE0049EB88 /* Retro-Coin-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Retro-Coin-icon.png"; sourceTree = "<group>"; };
 		A7FA68051EEA932C00698361 /* idle001.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = idle001.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7FA68081EEA932C00698361 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7FA680A1EEA932C00698361 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				A7FA68081EEA932C00698361 /* AppDelegate.swift */,
 				A7FA680A1EEA932C00698361 /* ViewController.swift */,
+				A7A974231EEDDCDE0049EB88 /* Retro-Coin-icon.png */,
 				A7FA680C1EEA932C00698361 /* Main.storyboard */,
 				A7FA680F1EEA932C00698361 /* Assets.xcassets */,
 				A7FA68111EEA932C00698361 /* LaunchScreen.storyboard */,
@@ -126,6 +129,7 @@
 			files = (
 				A7FA68131EEA932C00698361 /* LaunchScreen.storyboard in Resources */,
 				A7FA68101EEA932C00698361 /* Assets.xcassets in Resources */,
+				A7A974241EEDDCDE0049EB88 /* Retro-Coin-icon.png in Resources */,
 				A7FA680E1EEA932C00698361 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +306,7 @@
 				A7FA68191EEA932C00698361 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
